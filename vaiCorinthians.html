@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vai Corinthians!</title>
+</head>
+
+<body>
+    <h2>
+        Escreva um programa para ler o número de gols marcados pelo Corinthians e o número de gols marcados pelo
+        Palmeiras em um final da Libertadores. Exibir o nome do vencedor. Caso não haja vencedor deverá ser exibida a
+        palavra EMPATE.
+    </h2>
+
+    <script>
+        var corinthians = parseInt(prompt("Insira o número de gols do Corinthians"));
+        var palmeiras = parseInt(prompt("Insira o número de gols do Palmeiras"));
+
+        if(corinthians>palmeiras){
+            document.write(`Vai Corinthians, os porco tomaram de ${corinthians} a ${palmeiras}`);
+        }else if(corinthians<palmeiras){
+            document.write(`Os porcos fizeram ${palmeiras} gols e o Timão fez ${corinthians} gols`);
+        }else if(palmeiras==corinthians){
+            document.write(`Empate! Os dois times fizeram ${corinthians} gols`);
+        }   
+    </script>
+
+</body>
+
+</html>

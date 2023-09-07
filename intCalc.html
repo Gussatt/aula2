@@ -21,7 +21,7 @@
 
         var operation = parseInt(prompt("Insira de 1 a 4 o número da operação desejada: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação"))
 
-        if(operation<1 && operation>4){
+        if(operation<1 || operation>4){
             alert("Operação não existente");
             location.href=location.href;
         }else{
@@ -30,7 +30,7 @@
                 document.write(`O resultado é igual à ${firstNumber + secondNumber}`);
             }else if(operation == 2){
                 document.write(`Foi escolhida a operação de subtração: <br>`);
-                document.write(`O resultado é igual à ${firstNumber -secondNumber}`);
+                document.write(`O resultado é igual à ${firstNumber - secondNumber}`);
             }else if(operation == 3){
                 document.write(`Foi escolhida a operação de divisão: <br>`);
                 document.write(`O resultado é igual à ${firstNumber / secondNumber}`);
