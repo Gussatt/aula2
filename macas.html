@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo maçãs</title>
+</head>
+
+<body>
+    <h2>
+        As maçãs custam R$ 3,50 cada se forem compradas menos do que uma dúzia, e R$ 2,50 se forem compradas pelo menos
+        doze. Escreva um programa que leia o número de maçãs compradas (considere que o usuário informará a quantidade),
+        calcule e escreva o valor total da compra.
+    </h2>
+
+    <script>
+        var apple = 3.5;
+        var quantity = parseInt(prompt("Insira a quantidade de maçãs que deseja comprar"));
+
+        if(quantity>=12){
+            apple = 2.5
+            document.write(`Você teve um desconto, o valor de cada maçã saiu por ${apple} e o total é ${apple*quantity}`)
+        }else{
+            apple = 3.5
+            document.write(`Você não teve um desconto, o valor de cada maçã saiu por ${apple} e o total é ${apple*quantity}`)
+        }
+    </script>
+
+</body>
+
+</html>
